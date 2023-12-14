@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+body {
+    background-color: #000;
+    background-image: url('logo.jpg');
+    background-size: 700px 700px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #ce7676;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #34495e;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 57px;
+}
+
+button {
+    background-color: #ce7676;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 57px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1> Inicio de sesion</h1>
+        <form id="loginForm">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="tecnica4" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="1234" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'sistema.html';
+            history.replaceState(null, null,"sistema.html")
+
+        });
+
+
+    </script>
+</body>
+</html>

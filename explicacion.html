@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Sistema de Gestión Escolar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ecf0f1;
+            color: #34495e;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        h3 {
+            color: #2ecc71;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .enlace-esquina {
+            position: fixed;
+            bottom: 0px;
+            right: 20px;
+            z-index: 999;
+            text-decoration: none;
+            color: #3498db;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .enlace-esquina:hover {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        .explicacion {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .referencia-imagen {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #toggleButton {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        #toggleButton:hover {
+            background-color: #ffffff;
+            color: #3498db;
+        }
+
+        #toggleButton svg {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Centro de Ayuda - Sistema de Gestión Escolar</h2>
+    </header>
+
+    <section class="explicacion">
+        <h3>Inicio</h3>
+        <p>La página de inicio del sistema presenta un menú principal que te permite acceder a las funciones esenciales. Desde aquí, puedes navegar fácilmente para gestionar información escolar.</p>
+        <figure>
+            <img src="menu.png" alt="Captura de pantalla del menú de inicio" class="referencia-imagen">
+            <figcaption>Captura de pantalla del menú de inicio</figcaption>
+        </figure>
+    </section>
+
+    <section class="explicacion">
+        <h3>Menú Principal</h3>
+        <p>El menú principal ofrece opciones para agregar alumnos, materias, y realizar búsquedas. Utiliza este menú como punto de partida para todas tus acciones en el sistema.</p>
+        <figure>
+            <img src="menu_principal.png" alt="Captura de pantalla del Menú Principal" class="referencia-imagen">
+            <figcaption>Captura de pantalla del Menú Principal</figcaption>
+        </figure>
+    </section>
+
+    <section class="explicacion">
+        <h3>Formularios</h3>
+        <p>Los formularios te permiten ingresar información detallada sobre alumnos y materias. Completa los campos requeridos y utiliza los botones específicos para agregar y buscar información de manera eficiente.</p>
+        <figure>
+            <img src="formulario.png" alt="Captura de pantalla del Formulario" class="referencia-imagen">
+            <figcaption>Captura de pantalla del Formulario</figcaption>
+        </figure>
+    </section>
+
+    <a href="sistema.html" class="enlace-esquina" title="Volver al sistema">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+        </svg>
+    </a>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
